@@ -193,9 +193,33 @@ SPLASH
 ABOUT
 =====================================================
 */
-.index-content{
+.index-content, .pr-content, .eventi-content-all, .infl-content-all, .content-inf-link-all, .join-cont-all {
     box-sizing: border-box;
-    padding: 62px 100px;
+    padding: 72px 100px;
+}
+
+@media (max-width: 1024px){
+    .index-content, .pr-content, .eventi-content-all, .infl-content-all, .content-inf-link-all, .join-cont-all {
+        padding: 72px 64px;
+    }
+}
+
+@media (max-width: 960px){
+    .index-content, .pr-content, .eventi-content-all, .infl-content-all, .content-inf-link-all, .join-cont-all {
+        padding: 72px 48px;
+    }
+}
+
+@media (max-width: 768px){
+    .index-content, .pr-content, .eventi-content-all, .infl-content-all, .content-inf-link-all, .join-cont-all {
+        padding: 72px 36px;
+    }
+}
+
+@media (max-width: 640px){
+    .index-content, .pr-content, .eventi-content-all, .infl-content-all, .content-inf-link-all, .join-cont-all {
+        padding: 60px 20px;
+    }
 }
 
 .index-content div{
@@ -277,13 +301,13 @@ ABOUT
 .title {
     font-size: 3vw;
     font-family: Montserrat;
+    font-weight: 700;
     font-style: normal;
     letter-spacing: 0;
     text-transform: none;
     line-height: 1.2em;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    font-weight: bolder;
 }
 
 .text-white {
@@ -433,11 +457,6 @@ ABOUT
 PR
 =====================================================
 */
-.pr-content{
-    box-sizing: border-box;
-    padding: 72px 100px;
-}
-
 .pr-cabecera{
     position: relative;
     height: auto;
@@ -447,7 +466,7 @@ PR
 }
 
 .pr-cabecera strong{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .pr-cabecera>h1 {
@@ -467,8 +486,6 @@ PR
     -o-animation: fadein 1s forwards; /* Opera < 12.1 */
     animation: fadein 1s forwards;
 }
-
-
 
 .pr-cont{
     width: 50%;
@@ -515,7 +532,7 @@ PR
 
 .pr-title{
     font-family: futura-pt, Montserrat;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
     letter-spacing: 0;
     text-transform: none;
@@ -593,10 +610,6 @@ PR
 }
 
 @media (max-width: 640px){
-    .pr-content{
-        padding: 32px 20px;
-    }
-
     .pr-cont{
         width: 100%;
     }
@@ -651,14 +664,14 @@ EVENTI
 }
 
 .eventi-cabecera strong{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .eventi-cabecera>h1 {
     opacity: 0;
     color: #121212;
     font-family: Montserrat;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
     font-size: 60px;
     letter-spacing: 0;
@@ -681,11 +694,6 @@ EVENTI
     }
 }
 
-.eventi-content-all{
-    box-sizing: border-box;
-    padding: 72px 100px;
-}
-
 .eventi-list{
     display: block;
     width: 100%;
@@ -698,7 +706,7 @@ EVENTI
 }
 
 .eventi-cont-img img{
-    width: 40vw;
+    width: 100%;
     height: auto;
     opacity: 0;
 
@@ -719,7 +727,7 @@ EVENTI
     text-align: left;
     padding: 10% 10%;
     font-family: Montserrat;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
     letter-spacing: 0;
     text-transform: none;
@@ -736,32 +744,24 @@ EVENTI
 }
 
 @media(max-width: 900px){
-    .eventi-content-all{
-        padding: 72px 36px;
-    }
-
     .eventi-cont-text p{
         top: 10%;
     }
 
     .eventi-cont-img img{
-        width: 120%;
+        width: 110%;
         height: auto;
     }
 }
 
 @media(max-width: 760px){
-    .eventi-content-all{
-        padding: 60px 20px;
-    }
-
     .eventi-cont-text p{
         top: 0;
         font-size: 26px
     }
 
     .eventi-cont-img img{
-        width: 120%;
+        width: 110%;
         height: auto;
     }
 }
@@ -784,7 +784,7 @@ EVENTI
 
 .eventi-text-link{
     font-family: Montserrat;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 16px;
     letter-spacing: .01em;
@@ -821,14 +821,14 @@ INFLUENCER
 }
 
 .infl-cabecera strong{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .infl-cabecera>h1 {
     opacity: 0;
     color: #121212;
     font-family: Montserrat;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
     font-size: 60px;
     letter-spacing: 0;
@@ -840,13 +840,6 @@ INFLUENCER
     -moz-animation: fadein 1s forwards; /* Firefox < 16 */
     -o-animation: fadein 1s forwards; /* Opera < 12.1 */
     animation: fadein 1s forwards;
-}
-
-
-
-.infl-content-all{
-    box-sizing: border-box;
-    padding: 72px 100px;
 }
 
 .infl-cont-image{
@@ -894,7 +887,7 @@ INFLUENCER
     left: 15%;
     color: #fff;
     font-family: Montserrat;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
     letter-spacing: .01em;
     text-transform: none;
@@ -903,22 +896,12 @@ INFLUENCER
 }
 
 @media(max-width: 900px){
-    .infl-content-all{
-        padding: 72px 36px;
-    }
-
     .infl-right-img p{
         font-size: 18px;
     }
 
     .infl-left-img p{
         font-size: 28px;
-    }
-}
-
-@media(max-width: 760px){
-    .infl-content-all {
-        padding: 60px 20px;
     }
 }
 
@@ -947,11 +930,6 @@ INFLUENCER
 }
 
 /* Influencer Links */
-.content-inf-link-all{
-    box-sizing: border-box;
-    padding: 72px 100px;
-}
-
 .inf-link-cabecera p{
     font-family: Montserrat;
     font-weight: 400;
@@ -1038,17 +1016,7 @@ inf-link-cont a{
     object-fit: cover;
 }
 
-@media(max-width: 900px){
-    .content-inf-link-all{
-        padding: 72px 36px;
-    }
-}
-
 @media(max-width: 960px){
-    .content-inf-link-all{
-        padding: 72px 36px;
-    }
-
     .inf-link-cont p{
         display: inline-block;
         color: #000000;
@@ -1082,10 +1050,6 @@ inf-link-cont a{
     }
 }
 @media(max-width: 960px) and (max-height: 560px){
-    .content-inf-link-all{
-        padding: 72px 36px;
-    }
-
     .inf-link-cont p{
         display: inline-block;
         color: #000000;
@@ -1112,17 +1076,6 @@ inf-link-cont a{
         height: 100%;
     }
 }
-
-@media(max-width: 760px){
-    .content-inf-link-all {
-        padding: 60px 20px;
-    }
-}
-
-@media (max-width: 640px){
-
-}
-
 /*
 =====================================================
 CONTATTACI
@@ -1161,11 +1114,6 @@ JOIN-HEIGHTS
 JOIN
 =====================================================
 */
-.join-cont-all{
-    box-sizing: border-box;
-    padding: 72px 100px;
-}
-
 .main-span-cont{
     width: 100%;
     height: max-content;
@@ -1196,7 +1144,7 @@ JOIN
     cursor: pointer;
     outline: none;
     font-family: futura-pt, Montserrat;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -1220,7 +1168,7 @@ JOIN
     cursor: pointer;
     outline: none;
     font-family: futura-pt, Montserrat;
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -1325,10 +1273,6 @@ JOIN
 }
 
 @media(max-width: 900px){
-    .join-cont-all{
-        padding: 72px 36px;
-    }
-
     .join-title{
         font-size: 3.5vh;
     }
@@ -1363,12 +1307,6 @@ JOIN
     .join-text{
         margin-left: 20%;
         margin-right: -20%;
-    }
-}
-
-@media(max-width: 760px){
-    .join-cont-all {
-        padding: 60px 20px;
     }
 }
 
