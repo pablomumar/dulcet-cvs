@@ -342,3 +342,19 @@ footer {
     box-shadow: inset 0 0 0 1px rgba(128,128,128,0);
     min-height: 64px;
 }
+
+/*
+=====================================
+FONT
+=====================================
+*/
+
+@font-face {
+    font-family: futura-pt;
+    src: url("fonts/FuturaPTMedium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: futura-pt-bold;
+    src: url("fonts/FuturaPTBold.otf") format("opentype");
+}

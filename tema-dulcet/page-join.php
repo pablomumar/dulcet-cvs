@@ -4,7 +4,9 @@
     Template Name: Join
 */
 
-get_header(); ?>
+get_header();
+
+?>
 
 <div class="join-cont-all">
 
@@ -28,6 +30,8 @@ get_header(); ?>
                 <div class="modal-body" style="position: relative;">
                     <form autocomplete="on" action="" method="POST" onsubmit="">
                         <div class="field-list clear">
+
+                            <input type="hidden" id="influencer-submission_id" value=''>
                             <fieldset class="form-item fields name required">
                                 <div class="form-title">Name <span class="required">*</span></div>
                                 <legend>Name</legend>
@@ -37,7 +41,7 @@ get_header(); ?>
 
                                 <div class="field first-name">
                                     <label class="caption"><input class="field-element field-control" name="fname"
-                                                                  x-autocompletetype="given-name" type="text"
+                                                                  x-autocompletetype="name" type="text"
                                                                   spellcheck="false"
                                                                   maxlength="30"
                                                                   data-title="First" />
@@ -76,6 +80,9 @@ get_header(); ?>
                                 <div class="prefix">http://</div>
                             </div>
                         </div>
+                        <div class="form-button-wrapper form-button-wrapper--align-left modal-footer">
+                            <input class="button" type="submit" value="Submit"/>
+                        </div>
                     </form>
 
                 </div>
@@ -83,8 +90,6 @@ get_header(); ?>
 
 
                 <!-- Modal Footer -->
-                <div class="form-button-wrapper form-button-wrapper--align-left modal-footer">
-                    <input class="button" type="submit" value="Submit"/></div>
                 <div class="hidden form-submission-text">Thank you!</div>
                 <div class="hidden form-submission-html" data-submission-html=""></div>
                 <!-- ! Modal Footer -->
@@ -100,12 +105,12 @@ get_header(); ?>
 
                 <!-- Modal Body -->
                 <div class="modal-body" style="position: relative;">
-                    <form autocomplete="on" action="" method="POST">
-                        <form autocomplete="on" action="" method="POST" onsubmit="">
+                    <form autocomplete="on" action="<?php echo home_url();?>/brand-submit-form.php" method="POST" onsubmit="getPseudoRandomString()">
 
                             <div class="field-list clear">
 
-                                <fieldset id="name-yui_3_17_2_15_1515103793589_19303" class="form-item fields name required">
+                                <input type="hidden" id="brand-submission_id" value=''>
+                                <fieldset id="name-surname" class="form-item fields name required">
                                     <div class="form-title">Name <span class="required">*</span></div>
                                     <legend>Name</legend>
                                     <button type="button" class="close custom-btn" data-dismiss="modal" aria-label="Close">
@@ -113,17 +118,13 @@ get_header(); ?>
                                     </button>
 
                                     <div class="field first-name">
-                                        <label class="caption"><input class="field-element field-control" name="fname"
-                                                                      x-autocompletetype="given-name" type="text"
-                                                                      spellcheck="false"
-                                                                      maxlength="30"
-                                                                      data-title="First" />
+                                        <label class="caption">
+                                            <input class="field-element field-control" name="brand-name-field" x-autocompletetype="given-name" type="text" spellcheck="false" maxlength="30" data-title="First" id="brand-name-field"/>
                                             First Name</label>
                                     </div>
                                     <div class="field last-name">
-                                        <label class="caption"><input class="field-element field-control" name="lname"
-                                                                      x-autocompletetype="surname" type="text"
-                                                                      spellcheck="false" maxlength="30" data-title="Last" />
+                                        <label class="caption">
+                                            <input class="field-element field-control" name="brand-surname-field" x-autocompletetype="surname" type="text" spellcheck="false" maxlength="30" data-title="Last" id="brand-surname-field"/>
                                             Last Name</label>
                                     </div>
                                 </fieldset>
@@ -131,21 +132,24 @@ get_header(); ?>
                                 <div id="brand-email" class="form-item field email required">
                                     <label class="form-title" for="brand-email-field">Email Address <span class="required">*</span></label>
 
-                                    <input class="field-element" name="email" x-autocompletetype="email" type="text" spellcheck="false" id="brand-email-field" />
+                                    <input class="field-element" name="brand-email-field" x-autocompletetype="email" type="text" spellcheck="false" id="brand-email-field" />
                                 </div>
 
                                 <div id="brand-subject" class="form-item field text required">
                                     <label class="form-title" for="brand-subject-field">Subject <span class="required">*</span></label>
 
-                                    <input class="field-element text" type="text" id="brand-subject-field" />
+                                    <input class="field-element text" name="brand-subject-field" type="text" id="brand-subject-field" />
                                 </div>
 
                                 <div id="brand-message" class="form-item field textarea required">
                                     <label class="form-title" for="brand-message-field">Message <span class="required">*</span></label>
 
-                                    <textarea class="field-element " id="brand-message-field" ></textarea>
+                                    <textarea class="field-element" name="brand-message-field" id="brand-message-field" ></textarea>
                                 </div>
 
+                            </div>
+                            <div class="form-button-wrapper form-button-wrapper--align-left modal-footer">
+                                <input class="button" type="submit" value="Submit"/>
                             </div>
                         </form>
 
@@ -155,8 +159,6 @@ get_header(); ?>
 
 
                 <!-- Modal Footer -->
-                <div class="form-button-wrapper form-button-wrapper--align-left modal-footer">
-                    <input class="button" type="submit" value="Submit"/></div>
                 <div class="hidden form-submission-text">Thank you!</div>
                 <div class="hidden form-submission-html" data-submission-html=""></div>
                 <!-- ! Modal Footer -->

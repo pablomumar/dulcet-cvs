@@ -29,7 +29,7 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
 
-                <div class="inf-link-cont fashion-cont">
+                <div class="inf-link-cont">
                     <div class="inf-link-cont-img">
 
 
