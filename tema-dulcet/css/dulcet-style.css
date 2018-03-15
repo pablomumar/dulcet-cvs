@@ -305,7 +305,7 @@ ABOUT
     font-style: normal;
     letter-spacing: 0;
     text-transform: none;
-    line-height: 1.2em;
+    line-height: 1.2em !important;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -461,7 +461,7 @@ PR
     position: relative;
     height: auto;
     padding: 17px;
-    width: 60vw;
+    width: 76%;
     margin: auto;
 }
 
@@ -476,7 +476,7 @@ PR
     font-weight: 700;
     font-style: normal;
     font-size: 60px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     line-height: .9em;
     text-transform: none;
     word-wrap: break-word;
@@ -658,7 +658,7 @@ EVENTI
     position: relative;
     height: auto;
     padding: 0 17px 17px;
-    width: 65vw;
+    width: 85%;
     margin: auto;
     text-align: center;
 }
@@ -815,7 +815,7 @@ INFLUENCER
     position: relative;
     height: auto;
     padding: 0 17px 17px;
-    width: 65vw;
+    width: 80%;
     margin: auto;
     text-align: left;
 }
@@ -962,7 +962,7 @@ INFLUENCER
     animation: fadein 1s ease-in .2s forwards;
 }
 
-inf-link-cont a{
+.inf-link-cont-img a{
     color: #fff;
 }
 
@@ -1213,8 +1213,9 @@ JOIN
 .join-title-cont{
     word-wrap: break-word;
     overflow-wrap: break-word;
-    margin-left: -50%;
-    width: 120%;
+    margin-left: -55%;
+    margin-top: -2%;
+    width: 155%;
     padding: 0 17px;
     opacity: 0;
 
@@ -1226,13 +1227,14 @@ JOIN
 
 .join-title{
     display: inline;
-    font-family: futura-pt, Montserrat;
-    font-weight: 700;
+    font-family: futura-pt-bold, Montserrat, futura-pt;
+    font-weight: bold;
     font-style: normal;
-    letter-spacing: 0;
+    letter-spacing: .02em;
     text-transform: none;
-    font-size: 5.5vh;
-    line-height: 1.6em;
+    font-size: 350%;
+    line-height: 1.4em;
+    padding-top: -100px;
     color: #000;
     background-color: #fff;
     text-align: left !important;
@@ -1264,17 +1266,21 @@ JOIN
 
 @media(max-width: 1175px){
     .join-title{
-        font-size: 4vh;
+        font-size: 300%;
+    }
+
+    .join-title-cont{
+        width: 160%;
     }
 
     .join-text-cont{
-        bottom: 40px;
+        bottom: 10px;
     }
 }
 
 @media(max-width: 900px){
     .join-title{
-        font-size: 3.5vh;
+        font-size: 250%;
     }
 
     .join-text-cont{
