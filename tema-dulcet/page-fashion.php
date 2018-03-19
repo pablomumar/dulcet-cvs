@@ -15,7 +15,7 @@ get_header(); ?>
             'post_type' => 'post' ,
             'orderby' => 'date' ,
             'order' => 'ASC' ,
-            'posts_per_page' => 9,
+            'posts_per_page' => 20,
             'category_name'         => 'fashion', /* This take the slug name*/
             'paged' => get_query_var('paged'),
             'post_parent' => 'influencer'

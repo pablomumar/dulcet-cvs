@@ -581,6 +581,39 @@ PR
     height: auto;
 }
 
+@media (max-width: 700px){
+    .pr-cont-title-img{
+        top: 30vh;
+        bottom: -36vh;
+    }
+
+    .pr-footer-img-text{
+        bottom: -43vh;
+    }
+}
+
+@media (max-width: 880px){
+    .pr-cont-title-img{
+        top: 37vh;
+        bottom: -43vh;
+    }
+
+    .pr-footer-img-text{
+        bottom: -50vh;
+    }
+}
+
+@media (max-width: 940px){
+    .pr-cont-title-img{
+        top: 40vh;
+        bottom: -46vh;
+    }
+
+    .pr-footer-img-text{
+        bottom: -53vh;
+    }
+}
+
 @media (max-width: 1080px){
     .pr-cont{
         width: 50%;
@@ -592,16 +625,12 @@ PR
     }
 
     .pr-cont-title-img{
-        position: absolute;
         top: 50vh;
         bottom: -56vh;
-        background-color: #fff;
     }
 
     .pr-footer-img-text{
         bottom: -63vh;
-        width: 100%;
-        display: inline;
     }
 
     .text-creazione>.pr-footer-img-text, .text-hammer>.pr-footer-img-text, .text-hammer>.pr-cont-title-img, .text-creazione>.pr-cont-title-img, .pr-media-title>.pr-cont-title-img, .pr-news-title>.pr-cont-title-img{
@@ -644,7 +673,7 @@ PR
     .pr-footer-img-text{
         top: 27vh;
         padding-left: 1vw;
-        width: 100%;
+        width: max-content;
         display: inline;
     }
 }
@@ -784,7 +813,7 @@ EVENTI
 
 .eventi-text-link{
     font-family: Montserrat;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 16px;
     letter-spacing: .01em;
@@ -1078,9 +1107,12 @@ INFLUENCER
 }
 /*
 =====================================================
-CONTATTACI
+ERROR
 =====================================================
 */
+.error-404 .page-title, .error-404 .page-content{
+    font-family: Montserrat;
+}
 
 /*
 =====================================================

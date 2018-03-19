@@ -29,7 +29,7 @@
                     <div class="footer-btn col-lg-2 col-md-2">
                         <div class="footer-btn">
                             <div class="footer-contattaci">
-                                <a href="href=<?php echo get_site_url(); ?>/join-heights/">Contattaci</a>
+                                <a href="<?php echo home_url(); ?>/join-heights/">Contattaci</a>
                             </div>
                         </div>
                     </div>
