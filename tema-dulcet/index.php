@@ -69,7 +69,7 @@
     <div class="div-button-brand">
         <div class="button-splash">
             <div>
-                <a href="<?php echo get_site_url(); ?>/influencer/" >SEI UN BRAND</a>
+                <a href="<?php echo get_site_url(); ?>/about/" >SEI UN BRAND</a>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
     <div class="div-button-infl">
             <div class="button-splash">
                 <div>
-                    <a href="<?php echo get_site_url(); ?>/public-relations/" >SEI UN INFLUENCER</a>
+                    <a href="<?php echo get_site_url(); ?>/influencer/" >SEI UN INFLUENCER</a>
                 </div>
             </div>
         </div>
