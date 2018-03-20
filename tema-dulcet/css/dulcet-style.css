@@ -28,8 +28,8 @@ SPLASH
 }
 
 .splash-in-content{
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
 
 #bg {
@@ -111,11 +111,24 @@ SPLASH
     animation: fadein 1s forwards;
 }
 
-.div-button{
+.button-splash-container{
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+
+.div-button-brand {
     position: absolute;
-    bottom: 60px;
-    left: 60px;
-    right: 60px;
+    width: 50%;
+    right: 10px;
+    bottom: 50px;
+}
+
+.div-button-infl {
+    position: absolute;
+    width: 50%;
+    left: 10px;
+    bottom: 50px;
 }
 
 .button-splash{
@@ -159,6 +172,10 @@ SPLASH
 }
 
 @media (max-width: 1020px){
+    .button-splash-container{
+        width: 80%;
+    }
+
     .splash p{
         font-size: 18px;
     }
@@ -169,6 +186,10 @@ SPLASH
 }
 
 @media (max-width: 760px){
+    .button-splash-container{
+        width: 100%;
+    }
+
     .splash p{
         font-size: 17px;
     }
@@ -179,6 +200,16 @@ SPLASH
 }
 
 @media (max-width: 600px){
+    .div-button-brand {
+        width: 95vw;
+        bottom: 10px;
+    }
+
+    .div-button-infl {
+        width: 96vw;
+        bottom: 75px;
+    }
+
     .splash p{
         font-size: 16px;
     }

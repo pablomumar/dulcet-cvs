@@ -60,21 +60,31 @@
 
             </div>
         </div>
-        <div class="text-center">
-            <!-- BUTTON -->
-            <div class="div-button">
-                <div class="button-splash">
-                    <div>
-                        <a href="<?php echo get_site_url(); ?>/about/" >ENTRA</a>
-                    </div>
-                </div>
+    </div>
+</div>
+
+<div class="text-center button-splash-container">
+    <!-- BUTTON -->
+
+    <div class="div-button-brand">
+        <div class="button-splash">
+            <div>
+                <a href="<?php echo get_site_url(); ?>/influencer/" >SEI UN BRAND</a>
             </div>
-            <!-- ! BUTTON -->
         </div>
     </div>
-    <!-- ! LOGO-P-BUTTON -->
 
+    <div class="div-button-infl">
+            <div class="button-splash">
+                <div>
+                    <a href="<?php echo get_site_url(); ?>/public-relations/" >SEI UN INFLUENCER</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- ! BUTTON -->
 </div>
+<!-- ! LOGO-P-BUTTON -->
 
 </body>
 <!-- ! CONTENT -->
