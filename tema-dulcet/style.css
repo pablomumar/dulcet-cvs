@@ -243,9 +243,11 @@ nav {
 /* Header hide */
 @media(max-width: 641px){
     .marco-header{
+        position: fixed;
+        z-index: 999;
         opacity: 0;
         background-color: black;
-        max-height: 50px;
+        min-height: 50px;
         padding-top: 8px;
         padding-bottom: 8px;
 
@@ -261,6 +263,10 @@ nav {
 
     .nav-logo-img{
         max-width: 48px;
+    }
+
+    .wrapper-div-p{
+        padding-top: 0 !important;
     }
 }
 
@@ -348,6 +354,11 @@ footer {
 FONT
 =====================================
 */
+
+@font-face {
+    font-family: futura-pt-light;
+    src: url("fonts/FuturaPTLight.otf") format("opentype");
+}
 
 @font-face {
     font-family: futura-pt;

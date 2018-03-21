@@ -5,7 +5,7 @@
 */
 
 get_header(); ?>
-<div class="infl-content-all container-fluid">
+<div class="infl-content-all">
 
     <!-- Content Title -->
     <div class="infl-cabecera">

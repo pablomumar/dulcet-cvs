@@ -31,7 +31,6 @@
 function dulcet_scripts() {
     //css
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7', 'all');
-	wp_enqueue_style( 'dulcet-style', get_template_directory_uri() . '/css/dulcet-style.css' , array(), '1.0.0', 'all');
 
     //js
     wp_enqueue_script('id_generator', get_template_directory_uri() . '/js/id_generator.js', array(), '1.0.0', true);

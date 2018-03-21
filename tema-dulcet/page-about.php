@@ -23,8 +23,8 @@ get_header(); ?>
                 <p class="title text-white"><strong>Crediamo nelle relazioni come occasioni di crescita per i brand</strong></p>
             </div>
             <div class="about-text">
-                <p class="text-white">Nasciamo dall'esperienza nelle Digital PR di <a class="text-white" href="https://figmenta.com/">Figmenta</a>, la nostra mother agency specializzata in comunicazione, marketing e tecnologia applicata al web: partecipiamo in prima persona agli eventi, siamo in comunicazione diretta con i nostri partner e coltiviamo relazioni che portano valore ai brand.</p>
-                <p class="text-white">Lavoriamo convinti che il mondo degli Eventi, delle PR e degli Influencer sia necessario per costruire <strong>relazioni</strong> durature e ingaggianti tra brand e consumatore.</p>
+                <p class="text-white">Nasciamo dall'esperienza nelle Digital PR di <a class="text-white" href="https://figmenta.com/">Figmenta</a>, la nostra mother agency specializzata in comunicazione, marketing e tecnologia applicata al web: partecipiamo in prima persona agli eventi, siamo in comunicazione diretta con i nostri partner e coltiviamo <strong>relazioni</strong> che portano valore ai brand.</p>
+                <p class="text-white">Lavoriamo convinti che il mondo degli Eventi, delle PR e degli Influencer sia necessario per costruire relazioni durature e ingaggianti tra brand e consumatore.</p>
             </div>
         </div>
     </div>
